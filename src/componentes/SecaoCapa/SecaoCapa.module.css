@@ -1,0 +1,57 @@
+.container_capa {
+    height: 80vh;
+    background: linear-gradient(47deg, #000113 0%, #04061D 80%, #04061D 100%);
+    background-image: url('/capa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+.container_capa div {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+.container_capa p,
+.container_capa h1
+  {
+    max-width: 500px;
+    font-family: 'Anybody', cursive;
+  }
+  
+.container_capa p {
+    font-size: 36px;
+    color: rgb(196, 196, 196);
+  }
+  
+.container_capa h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+    line-height: 70px;
+    letter-spacing: 5px;
+  }
+  
+@media (max-width: 768px) {
+    .container_capa h1 {
+      font-size: 40px;
+      max-width: 350px;
+    }
+    .container_capa p {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .container_capa {
+      background-position: 89% center;
+    }
+    .container_capa div {
+      background-color: rgba(0,0,0,0.6);
+    }
+  }
